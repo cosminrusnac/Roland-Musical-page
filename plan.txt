@@ -1,0 +1,45 @@
+de facut o pagina cu inspiratie din MCMusic
+Roland
+
+cu cos de cumparaturi cu badge
+
+responsive maxim absolut
+
+4 saptamani:
+
+sapt 1: 16-22 ianuarie;
+
+    - schelet HTML, butoane, fundal
+    - categorii site
+    - schelet la toate sectiunile(contact, about, etc.)
+    - schita pt functionalitati (idei clare, precise)
+    - tehnologii folosite: 
+        Bootstrap, JS, jQuery
+sapt 2: 23-29 ianuarie;
+
+    - lucru la functionalitati(adaugare produse in cos, sortare, animatii)
+    - testare functionalitati
+
+sapt 3: 30-5 februarie;
+    - finalizare functionalitati
+    - lucru la detalii. 
+        butoane, logica, design, flow
+    - 
+
+sapt 4: 6-12 februarie.
+    - finisare finala 
+    - speech, de stiut fiecare linie de cod
+    - cel putin 4 prezentari singur
+    - notiuni
+    - feedback Alex, Rares, altii
+
+1 martie predare proiect
+
+idei: 
+- smooth scrolling
+- fetch (api) pentru 
+- location on input form
+- form validation cu regex si autocomplete
+- math.random()
+- price range
+- tab cu online piano!!!
