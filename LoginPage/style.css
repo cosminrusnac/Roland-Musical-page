@@ -480,3 +480,8 @@ color: #b3b3b3;
 #pass-rep-res {
   padding: 10px;
 }
+
+
+#warning, #warning1 {
+  display: none;
+}

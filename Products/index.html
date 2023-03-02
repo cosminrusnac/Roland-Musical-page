@@ -19,7 +19,10 @@
     <script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202301170101/show_ads_impl_with_ama_fy2021.js?client=ca-pub-3311815518700050&plah=bestjquery.com&bust=31071765" id="google_shimpl"></script><script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
     <script async src="https://cse.google.com/cse.js?cx=2296ae2ab412e4c4d" defer></script>
-   
+    <script src="/Roland-Musical page/Products/location.js" defer></script>
+    <link rel="stylesheet" href="/Roland-Musical page/chat.css">
+    <script src="/Roland-Musical page/chat.js" defer></script>
+    <script src="/Roland-Musical page/responses.js" defer></script>
 </head>
 
 <body>
@@ -168,6 +171,8 @@
                 <span class="total-price">$0</span>
                 <button class="purchase-btn">PURCHASE</button>
               </div>
+              <p id="location">Your products will be shipped to: <img src="/Roland-Musical page/img/location.png" alt="location" width="30px" height="30px"></p>
+              <button id="location-button">Click to get your location</button>
               <div class="paySection">
                 <div class="paymethods">
                   <img src="https://d1b2zzpxewkr9z.cloudfront.net/images/checkout/visa.png" alt="">
@@ -176,6 +181,7 @@
                   <img src="https://d1b2zzpxewkr9z.cloudfront.net/images/checkout/amex.png" alt="">
                  
                 </div>
+                
                 <p class="pay-resources">✔️ We accept all major credit cards and Paypal. ✔️ </p>
               </div>
             </div>
@@ -723,7 +729,47 @@
     </div>
   </section>
 
+  <div class="chat-bar-collapsible">
+    <button id="chat-button" type="button" class="collapsible">Chat with us!
+        <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+    </button>
 
+    <div class="content">
+        <div class="full-chat-block">
+          
+            <div class="outer-container">
+                <div class="chat-container">
+                
+                    <div id="chatbox">
+                        <h5 id="chat-timestamp"></h5>
+                        <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                    </div>
+                    <div class="chat-bar-input-block">
+                        <div id="userInput">
+                            <input id="textInput" class="input-box" type="text" name="msg"
+                                placeholder="Tap 'Enter' to send a message">
+                            <p></p>
+                        </div>
+
+                        <div class="chat-bar-icons">
+                            <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                onclick="heartButton()"></i>
+                            <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                onclick="sendButton()"></i>
+                        </div>
+                    </div>
+
+                    <div id="chat-bar-bottom">
+                        <p></p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
 
 
 

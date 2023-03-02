@@ -1,19 +1,11 @@
-let mybutton = document.getElementById("myBtn");
+// go to top function
 
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-function topFunction() {
+const topFunction = () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+// random image generator
 
 const imageSources = ['/Roland-Musical page/img/about-us.jpg', 
 '/Roland-Musical page/img/about-us2.jpg', 
@@ -22,14 +14,15 @@ const imageSources = ['/Roland-Musical page/img/about-us.jpg',
 '/Roland-Musical page/img/about-us5.jpg'
 ];
 
-let randomNumber = (min, max) => {
-	return Math.round(Math.random() * (max - min) + min);
-}
+// generate random number between a range
 
-console.log(randomNumber(0, 4));
+let randomNumber = (min, max) => Math.round(Math.random() * (max - min) + min);
+
+// assign the image to container
 
 document.getElementById('aboutUs').src = imageSources[randomNumber(0,4)];
 
+// view options for products
 
 const rangeInput = document.querySelector('input[type = "range"]');
 const imageList = document.querySelector(".image-list");
@@ -45,7 +38,6 @@ const listView = "list-view";
 const gridView = "grid-view";
 const dNone = "d-none";
 
-
 for (const btn of btns) {
   btn.addEventListener("click", function() {
     const parent = this.parentElement;
@@ -53,7 +45,6 @@ for (const btn of btns) {
     parent.classList.add(active);
     this.disabled = true;
     document.querySelector('.view-options [class^="show-"]:not(.active) button').disabled = false;
-
     if (parent.classList.contains("show-list")) {
       parent.previousElementSibling.previousElementSibling.classList.add(dNone);
       imageList.classList.remove(gridView);
@@ -66,11 +57,11 @@ for (const btn of btns) {
   });
 }
 
-
 rangeInput.addEventListener("input", function() {
   document.documentElement.style.setProperty("--minRangeValue",`${this.value}px`);
 });
 
+// search feature
 
 for (const caption of captions) {
   myArray.push({
@@ -78,11 +69,6 @@ for (const caption of captions) {
     text: caption.textContent
   });
 }
-
-console.log(myArray);
-
-searchInput.addEventListener("keyup", keyupHandler);
-
 function keyupHandler() {
   for (const item of imageListItems) {
     item.classList.add(dNone);
@@ -95,9 +81,6 @@ function keyupHandler() {
     }
   }
 
-
-
-
   if (filteredArray.length == 1) {
     photosCounter.textContent = filteredArray.length + ' product found ✔️'
   } else if (filteredArray.length > 2) {
@@ -105,23 +88,11 @@ function keyupHandler() {
   } else if (filteredArray.length == 0) {
     photosCounter.textContent = filteredArray.length + ' products found ❌'
   }
-
 }
 
+searchInput.addEventListener("keyup", keyupHandler);
+
 // category selection
-
-// const pianoCheck = document.querySelector('#piano');
-const accCheck = document.querySelector('#accesories');
-const accordionCheck = document.querySelector('#accordion');
-const pedalCheck = document.querySelector('#pedals');
-const drumsCheck = document.querySelector('#drums');
-const speakerCheck = document.querySelector('#speakers');
-const padsCheck = document.querySelector('#pads');
-const othersCheck = document.querySelector('#others');
-const showAll = document.querySelector('#showAll');
-const showCategory = document.querySelector('#showCategory');
-
-
 
 $(function () {
   $('#piano').change(function () {
@@ -171,27 +142,11 @@ $(function () {
   })
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// add to favorites
 
 const favorites = document.querySelectorAll('.favorites');
 
-
-favorites.forEach(e => {
-  e.addEventListener('click', () => {
+favorites.forEach(e => {e.addEventListener('click', () => {
     e.innerHTML = '<i class="bi bi-heart-fill"></i>';
   });
 });
@@ -207,7 +162,6 @@ cart.addEventListener('click', () => {
     cartModalOverlay.style.transform = 'translateX(-200%)';
   }
 })
-// end of open cart modal
 
 // close cart modal
 const closeBtn = document.querySelector ('#close-btn');
@@ -221,23 +175,15 @@ cartModalOverlay.addEventListener('click', (e) => {
     cartModalOverlay.style.transform = 'translateX(-200%)'
   }
 })
-// end of close cart modal
 
 // add products to cart
 const addToCart = document.getElementsByClassName('add-to-cart');
 const productRow = document.getElementsByClassName('product-row');
 
-for (var i = 0; i < addToCart.length; i++) {
+for (let i = 0; i < addToCart.length; i++) {
   button = addToCart[i];
   button.addEventListener('click', addToCartClicked)
 }
-
-
-// addToCart.forEach(e => {
-//   e.addEventListener('click', () => {
-//     e.innerHTML = 'Added ✔️';
-//   });
-// });
 
 function addToCartClicked (event) {
   button = event.target;
@@ -254,32 +200,32 @@ function addToCartClicked (event) {
   updateCartPrice();
 }
 
-
-for ( i=0; i<favorites.length; i++) {
+for (let i=0; i<favorites.length; i++) {
   button = favorites[i];
   button.addEventListener('click', addToFavorites);
 }
-
 
 function addToFavorites (event) {
   button = event.target;
   button.style.outline = 'none';
   button.style.backgroundColor = 'red';
   button.style.color = 'var(--lightPeach)'
+  
   var cartItem = button.parentElement;
   var ol = document.getElementById('favoritesList');
   let itemTitle = cartItem.getElementsByClassName('fig-title')[0].innerText;
   let li = document.createElement('li');
+  
   li.textContent = itemTitle;
   ol.appendChild(li);
+  
   let imageSrc = cartItem.getElementsByClassName('product-image')[0].src;
   let imageToAdd = document.createElement('img');
+  
   imageToAdd.src = imageSrc;
   imageToAdd.style.width = '6%';
   imageToAdd.style.marginLeft = '20px';
   li.appendChild(imageToAdd);
-
-
 }
 
 function addItemToCart (price, imageSrc, itemTitle) {
@@ -288,7 +234,7 @@ function addItemToCart (price, imageSrc, itemTitle) {
   var productRows = document.getElementsByClassName('product-rows')[0];
   var cartImage = document.getElementsByClassName('cart-image');
   
-  for (var i = 0; i < cartImage.length; i++){
+  for (let i = 0; i < cartImage.length; i++){
     if (cartImage[i].src == imageSrc){
       alert ('This item has already been added to the cart')
       return;
@@ -303,20 +249,19 @@ function addItemToCart (price, imageSrc, itemTitle) {
         <input class="product-quantity" type="number" value="1">
         <button class="remove-btn">REMOVE</button> 
         </div>
-        
       `
-  productRow.innerHTML = cartRowItems;
-  productRows.append(productRow);
-  console.log(productRow.getElementsByClassName('remove-btn')[0]);
-  productRow.getElementsByClassName('remove-btn')[0].addEventListener('click', removeItem)
-  productRow.getElementsByClassName('product-quantity')[0].addEventListener('change', changeQuantity)
-  updateCartPrice()
+
+    productRow.innerHTML = cartRowItems;
+    productRows.append(productRow);
+    console.log(productRow.getElementsByClassName('remove-btn')[0]);
+    productRow.getElementsByClassName('remove-btn')[0].addEventListener('click', removeItem)
+    productRow.getElementsByClassName('product-quantity')[0].addEventListener('change', changeQuantity)
+    updateCartPrice()
 }
-// end of add products to cart
 
 // Remove products from cart
 const removeBtn = document.getElementsByClassName('remove-btn');
-for (var i = 0; i < removeBtn.length; i++) {
+for (let i = 0; i < removeBtn.length; i++) {
   button = removeBtn[i]
   button.addEventListener('click', removeItem)
 }
@@ -330,7 +275,7 @@ function removeItem (event) {
 // update quantity input
 var quantityInput = document.getElementsByClassName('product-quantity')[0];
 
-for (var i = 0; i < quantityInput; i++){
+for (let i = 0; i < quantityInput; i++){
   input = quantityInput[i]
   input.addEventListener('change', changeQuantity)
 }
@@ -342,29 +287,24 @@ function changeQuantity(event) {
   }
   updateCartPrice()
 }
-// end of update quantity input
 
 // update total price
 function updateCartPrice() {
-  var total = 0
+  let total = 0
   for (var i = 0; i < productRow.length; i += 2) {
     cartRow = productRow[i]
-  var priceElement = cartRow.getElementsByClassName('cart-price')[0]
-  var quantityElement = cartRow.getElementsByClassName('product-quantity')[0]
-  var price = parseFloat(priceElement.innerText.replace('€', ''))
-  var quantity = quantityElement.value
-  total = total + (price * quantity)
-    
+  let priceElement = cartRow.getElementsByClassName('cart-price')[0]
+  let quantityElement = cartRow.getElementsByClassName('product-quantity')[0]
+  let price = parseFloat(priceElement.innerText.replace('€', ''))
+  let quantity = quantityElement.value
+  total = total + (price * quantity);
   }
-  document.getElementsByClassName('total-price')[0].innerText =  '€' + total.toFixed(2)
-
-document.getElementsByClassName('cart-quantity')[0].textContent = i /= 2
+  document.getElementsByClassName('total-price')[0].innerText =  '€' + total.toFixed(2);
+  document.getElementsByClassName('cart-quantity')[0].textContent = i /= 2;
 }
-// end of update total price
 
 // purchase items
 const purchaseBtn = document.querySelector('.purchase-btn');
-
 const closeCartModal = document.querySelector('.cart-modal');
 
 purchaseBtn.addEventListener('click', purchaseBtnClicked)
@@ -375,7 +315,6 @@ function purchaseBtnClicked () {
  var cartItems = document.getElementsByClassName('product-rows')[0]
  while (cartItems.hasChildNodes()) {
    cartItems.removeChild(cartItems.firstChild)
-   
  }
   updateCartPrice()
 }

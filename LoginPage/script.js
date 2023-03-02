@@ -15,21 +15,15 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-
-
 // username and password validation through API
 
 let users = [];
 let passwords = [];
 let userCheckResult = document.getElementById('user-check-result');
 let passwordCheckResult = document.getElementById('password-check-result');
-
-
 let signIn = document.getElementById('sign-in');
 let userInput = document.getElementById('user');
-let passwordInput = document.getElementById('pass')
-
-
+let passwordInput = document.getElementById('pass');
 
 
 const checkUserNameAndPassword = () => {
@@ -188,7 +182,24 @@ fetch("https://jsonplaceholder.typicode.com/users", {
 .then(json => console.log(json));
 }
 
-signUp.addEventListener('click', addUser)
+signUp.addEventListener('click', addUser);
+
+// check CAPS Lock key if pressed
+
+
+let warningText = document.getElementById('warning');
+let userName = document.getElementById('user1');
+
+const capsOn = e => e.getModifierState("CapsLock") ? 
+warningText.style.display = "block" : warningText.style.display = "none";
+
+userInput.addEventListener("keyup", capsOn);
+passwordInput.addEventListener("keyup", capsOn);
+userName.addEventListener("keyup", capsOn);
+passwordInput1.addEventListener("keyup", capsOn);
+emailInput.addEventListener("keyup", capsOn);
+passwordRepeatInput.addEventListener("keyup", capsOn);
+
 
 
 

@@ -789,4 +789,25 @@ a {
   font-size: 20px;
 }
 
+/* // style the location button */
+
+#location-button {
+  background-color: var(--orangeLight);
+  color: var(--lightPeach);
+  padding: 5px;
+  margin: 50px;
+  font-size: 17px;
+}
+
+#location {
+  color: var(--lightPeach);
+  margin: 20px
+}
+
+#location > img {
+  margin: 10px
+}
+
+
+
 
