@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="icon" type="images/png" href="/img/favicon webicon.png">
+    <link rel="stylesheet" href="/SingleProducts/style.css">
+    <link rel="stylesheet" href="/Products/style.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tinos">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202301170101/show_ads_impl_with_ama_fy2021.js?client=ca-pub-3311815518700050&plah=bestjquery.com&bust=31071765" id="google_shimpl"></script><script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script async src="https://cse.google.com/cse.js?cx=2296ae2ab412e4c4d" defer></script>
+    <script src="/Products/location.js" defer></script>
+    <script src="/SingleProducts/script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js" integrity="sha512-LUKzDoJKOLqnxGWWIBM4lzRBlxcva2ZTztO8bTcWPmDSpkErWx0bSP4pdsjNH8kiHAUPaT06UXcb+vOEZH+HpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-inverse navbar-fixed-top ">
+      <div class="container-fluid ">
+        <div class="navbar-header ">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="/index.html">
+            <img src="/img/logo3.png" width=270px" height="50px" alt="logo">
+          </a>
+      </div>
+
+      <div class="collapse navbar-collapse " id="myNavbar">
+        <ul class="nav navbar-nav ">
+          <li id="home"><a href="/index.html"><span class="glyphicon glyphicon-home"></span>&#32HOME</a></li>
+          <li id="about"><a href="#">ABOUT US</a></li>
+          <li id="products" class="dropdown"><a href="/Products/index.html">PRODUCTS <i class="fa fa-caret-down"></i> 
+            <div class="dropdown-content">
+              <div class="productlist1">
+                <div class="col-md-4">
+                          <a href="/Products/index.html">
+                            <h4>Electronics</h4>
+                          </a>
+                          <a href="/Products/index.html">
+                            
+                            <h4>Clothes</h4>
+                          </a>
+                          <a href="/Products/index.html">
+                           
+                            <h4>Miscelaneous</h4>
+                          </a>  
+                          <a href="/Products/index.html">
+                          
+                            <h4>Hard-disks</h4>
+                          </a>
+                          
+                </div>
+                <div class="col-md-4 ">
+                            <a href="/Products/index.html">
+                              <h4>Rings</h4>
+                            </a>
+                            <a href="/Products/index.html">
+                              <h4>Jewlery</h4>
+                            </a>
+                            <a href="/Products/index.html">
+                              <h4>Technology</h4>
+                            </a>  
+                            <a href="/Products/index.html">
+                              <h4>Others</h4>
+                            </a>
+                          </div>
+                          <div class="col-md-4 "> 
+                            <a href="/Products/index.html">
+                              <h4>Others</h4>
+                            </a>
+                           <a href="/Products/index.html">
+                              <h4>Others</h4>
+                            </a>
+                            <a href="/Products/index.html">
+                              <h4>Others</h4>
+                            </a>  
+                            <a href="/Products/index.html">
+                              <h4>Others</h4>
+                            </a>
+                          </div>
+              </div>
+      </a>
+    </li>
+         
+          <li id="contact" class="dropdown"><a href="" >CONTACT US <i class="fa fa-caret-down"></i>
+            <div class="dropdown-content">
+              <div class="productlist2" id="community">
+                <div class="col-md-6 second">
+                  <a href="https://www.facebook.com/RolandGlobalOfficial/?brand_redir=72272268297">
+                    <img src="/img/menu_facebook.png" alt="" class="menu-icons">
+                   
+                  </a>
+                  <a href="https://www.youtube.com/user/rolandchannel">
+                    <img src="/img/menu_youtube.png" alt="" class="menu-icons">
+                  
+                  </a>
+                  <a href="https://twitter.com/rolandglobal">
+                    <img src="/img/menu_twitter.png" alt="" class="menu-icons">
+                  </a>  
+                
+                  
+                </div>
+                <div class="col-md-6 second">
+                    <a href="https://www.instagram.com/rolandglobal/?hl=en">
+                      <img src="/img/menu-instagram.png" alt="" class="menu-icons">
+                      
+                    </a>
+                    <a href="https://www.roland.com/global/">
+                      <img src="/img/menu_social_media.png" alt="" class="menu-icons">
+                      
+                    </a>
+                    <a href="https://www.roland.com/global/">
+                      <img src="/img/menu-tiktok.png" alt="" class="menu-icons">
+                      
+                    </a>  
+                </div>  
+              </div>
+                  
+            </div>
+        </a>
+      </li>
+          
+      </ul>
+
+          
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/LoginPage/index.html" class="logout"><span class="glyphicon glyphicon-user"></span> Log out</a></li>
+              <li>
+                  <a id="cart"> 
+                    <div class="cart-btn"> 
+                      <i id="cart" class="glyphicon glyphicon-shopping-cart"></i>
+                      Cart <span class ="cart-quantity">0</span>
+                    </div>
+                </a>
+              </li>
+          </ul>
+
+          <div class="cart-modal-overlay">
+            <div class="cart-modal">
+              <i id="close-btn">ⓧ</i>
+              <div class="cart-header">
+                <h1 class="your-cart"><img src="/img/shopping-cart.png" width="30px" height="30px" alt=""> Your Cart </h1>
+                <img src="/img/logo3.png">
+              </div>
+              <div class="product-rows">
+              </div>
+              <div class="total">
+                <h1 class="cart-total">TOTAL</h1>
+                <span class="total-price">$0</span>
+                <button class="purchase-btn">PURCHASE</button>
+              </div>
+              <p id="location">Your products will be shipped to: <img src="/img/location.png" alt="location" width="30px" height="30px"></p>
+              <button id="location-button">Click to get your location</button>
+              <div class="paySection">
+                <div class="paymethods">
+                  <img src="https://d1b2zzpxewkr9z.cloudfront.net/images/checkout/visa.png" alt="">
+                  <img src="https://d1b2zzpxewkr9z.cloudfront.net/images/checkout/discover.png" alt="">
+                  <img src="https://d1b2zzpxewkr9z.cloudfront.net/images/checkout/mastercard.png" alt="">
+                  <img src="https://d1b2zzpxewkr9z.cloudfront.net/images/checkout/amex.png" alt="">
+                 
+                </div>
+                
+                <p class="pay-resources">✔️ We accept all major credit cards and Paypal. ✔️ </p>
+              </div>
+            </div>
+        </div>
+
+          <form class="navbar-form navbar-right" action="/action_page.php" autocomplete="off">
+              <div class="input-group">
+               
+                <div class="gcse-search"></div>
+              </div>
+            </form>
+      </div>
+  </nav>
+    
+  </div>  
+  
+  <div class="backbutton">
+    <a href="/Products/index.html"> <button id="back"> <img src="/img/back-button.png" alt="" width="25px"> Go back</button> </a>
+  </div>
+
+  <div class="singleproduct">
+    <div class="container" id="loading">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="loader">
+                  <p>Loading...</p>
+                  <div class="loader-inner"></div>
+                  <div class="loader-inner"></div>
+                  <div class="loader-inner"></div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div>
+      <img src="" id="product-image" alt="product-image">
+    </div>
+    <div class="details">
+      <h1 id="product-title"></h1>
+      <p id="product-category"></p>
+      <h2 id="product-price"></h2>
+      <p id="product-description"></p>
+      <h4 id="product-rating"></h4> 
+      <button class="btn btn-default addToCart"><i class="bi bi-cart-plus"></i> Add to cart</button>
+    </div>
+  </div>
+  
+  <div class="up">
+    <button class="up-button btn-default" onclick="topFunction()" id="myBtn">  
+      <i class="fa fa-caret-up"></i>
+    </button>
+      
+  </div>
+
+
+
+
+
+  <footer class="container-fluid">
+    <div class="row footer container-fluid">
+      <div class="col-md-2">
+        <h5>PRODUCTS</h5>
+        <a href="">Featured products</a>
+        <a href="">Pianos</a>
+        <a href="">Organs</a>
+        <a href="">Synthesizer</a>
+        <a href="">Keyboards</a>
+        <a href="">Guitar & Bass</a>
+        <a href="">Drums & Percussion</a>
+        <a href="">Wind Instruments</a>
+        <a href="">Production</a>
+        <a href="">Amplifiers</a>
+        <a href="">AIRA & DJ</a>
+        <a href="">Roland Cloud</a>
+        <a href="">Professional AV</a>
+        <a href="">Accesories</a>
+        <a href="">Apps</a>
+      </div>
+      <div class="col-md-2">
+        <h5>COMMUNITY</h5>
+        <a href="">Facebook</a>
+        <a href="">YouTube</a>
+        <a href="">Twitter</a>
+        <a href="">Instagram</a>
+        <a href="">World Social Network</a>
+        </div>
+      <div class="col-md-2">
+        <h5>SUPPORT</h5>
+        <a href="">Updates & Drivers</a>
+        <a href="">Owner's Manuals</a>
+        <a href="">Support Documents</a>
+        <a href="">Support News</a>
+        </div>
+      <div class="col-md-2">
+        <h5>ARTICLES</h5>
+        <a href="">Stories</a>
+        <a href="">Learn</a>
+        <a href="">Discover</a>
+        <a href="">Knowledge Base</a>
+        </div>
+      <div class="col-md-2">
+        <h5>IR</h5>
+        <a href="">Management Policy</a>
+        <a href="">Financial Information</a>
+        <a href="">IR Library</a>
+        <a href="">Stock Information</a>
+        </div>
+      <div class="col-md-2">
+        <h5>COMPANY</h5>
+        <a href="">Corporate Information</a>
+        <a href="">Philosophy</a>
+        <a href="">Brands</a>
+        <a href="">History</a>
+        </div>
+    </div>
+  
+    <div class="row container-fluid footer2">
+     
+      
+        <div class="col-md-6">
+          <img src="/img/promo_boss.jpg" alt="">
+        </div>
+        
+        <div class="col-md-6">
+          <img src="/img/promo_v-moda.png" alt="">
+        </div>
+     
+     
+     
+      <div class="row footer3">
+              
+        <div class="col-6 copyright privacy">
+                Privacy Statement | Terms of Use | Accesibility Statement
+        </div>
+              
+        <div class="col-6 copyright privacy">
+                Copyright © 2023 Online Store Corporation
+        </div>
+      
+          
+      </div>
+  
+    
+  
+    
+  </footer>
+</body>
+</html>

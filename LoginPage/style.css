@@ -1,0 +1,116 @@
+/* var colors  */
+:root {
+  --pineGreen: #1d3c45;
+  --orangeLight: rgb(210, 96, 26);
+  --lightPeach: rgb(255, 241, 225);
+}
+
+
+/* login container */
+
+.login-box{
+	height: 550px;
+	margin: 15vw 8vw ;
+  width: 70%;
+	max-width: 100vw;
+	position: relative;
+	background: var(--pineGreen);
+  box-shadow: 0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+  opacity: 0.95;
+  padding: 50px;
+  text-align: center;
+  padding-top: 4px;
+}
+
+.welcomeMessage {
+  padding: 30px;
+  color: var(--lightPeach);
+  font-size: 3vw;
+}
+
+.input {
+  width: 200px;
+  height: 30px;
+  padding: 10px;
+}
+
+.label {
+  font-size: 18px;
+}
+
+.loginMessage {
+  color: var(--lightPeach);
+  font-size: 20px;
+}
+
+.loginForm {
+  padding-top: 50px;
+}
+
+#password {
+  margin-left: 5px;
+}
+
+.input-group {
+  padding: 10px;
+}
+
+.label1, .forgot {
+  color: var(--lightPeach);
+  padding-top: 10px;
+  margin-left: 5px
+}
+
+.label1 > a {
+  color: var(--lightPeach);
+  text-decoration: underline;
+}
+
+#checkTerms, #check {
+  margin-left: 30px;
+  accent-color: var(--orangeLight);
+  scale: 1.4
+}
+
+@media screen and (max-width: 800px) {
+  .login-box {
+    margin-left: 5px;
+    width: 95%
+    }
+}
+
+.button {
+  width: 130px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: var(--lightPeach);
+  padding: 10px;
+  background-color: var(--orangeLight);
+  margin-left: 30px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+
+.error-message {
+  color: var(--lightPeach)
+}
+
+#login-error {
+  background-color: rgb(205, 97, 97);
+  color: var(--lightPeach);
+  min-width: 50px;
+}
+
+#warning {
+  color: var(--lightPeach);
+  font-size: 15px;
+} 
+/* background image  */
+
+.main {
+  background-image: url(https://static.roland.com/products/fp-e50/images/Explore_Create_hero.jpg);  
+  background-repeat: no-repeat;
+  background-size: 102%;
+  background-position: center;
+  width: 101%;
+}

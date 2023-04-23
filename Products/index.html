@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="/Products/script_dynamic.js" defer></script>
+    <link rel="icon" type="images/png" href="/img/favicon webicon.png">
+    <link rel="stylesheet" href="/Products/style.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tinos">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202301170101/show_ads_impl_with_ama_fy2021.js?client=ca-pub-3311815518700050&plah=bestjquery.com&bust=31071765" id="google_shimpl"></script><script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script async src="https://cse.google.com/cse.js?cx=2296ae2ab412e4c4d" defer></script>
+    <script src="/Products/location.js" defer></script>
+    <link rel="stylesheet" href="/chat.css">
+    <script src="/chat.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js" integrity="sha512-LUKzDoJKOLqnxGWWIBM4lzRBlxcva2ZTztO8bTcWPmDSpkErWx0bSP4pdsjNH8kiHAUPaT06UXcb+vOEZH+HpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+ 
+  <div class="container-fluid">
+    <nav class="navbar navbar-inverse navbar-fixed-top ">
+      <div class="container-fluid ">
+        <div class="navbar-header ">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="/index.html">
+            <img src="/img/logo3.png" width=270px" height="50px" alt="logo">
+          </a>
+      </div>
+
+      <div class="collapse navbar-collapse " id="myNavbar">
+          <ul class="nav navbar-nav ">
+              <li id="home"><a href="/index.html"><span class="glyphicon glyphicon-home"></span>&#32HOME</a></li>
+              <li id="about"><a href="#">ABOUT US</a></li>
+              <li id="products" class="dropdown"><a href="/Products/index.html">PRODUCTS <i class="fa fa-caret-down"></i> 
+                <div class="dropdown-content">
+                  <div class="productlist1">
+                    <div class="col-md-4">
+                              <a href="/Products/index.html">
+                                <h4>Electronics</h4>
+                              </a>
+                              <a href="/Products/index.html">
+                                
+                                <h4>Clothes</h4>
+                              </a>
+                              <a href="/Products/index.html">
+                               
+                                <h4>Miscelaneous</h4>
+                              </a>  
+                              <a href="/Products/index.html">
+                              
+                                <h4>Hard-disks</h4>
+                              </a>
+                              
+                    </div>
+                    <div class="col-md-4 ">
+                                <a href="/Products/index.html">
+                                  <h4>Rings</h4>
+                                </a>
+                                <a href="/Products/index.html">
+                                  <h4>Jewlery</h4>
+                                </a>
+                                <a href="/Products/index.html">
+                                  <h4>Technology</h4>
+                                </a>  
+                                <a href="/Products/index.html">
+                                  <h4>Others</h4>
+                                </a>
+                              </div>
+                              <div class="col-md-4 "> 
+                                <a href="/Products/index.html">
+                                  <h4>Others</h4>
+                                </a>
+                               <a href="/Products/index.html">
+                                  <h4>Others</h4>
+                                </a>
+                                <a href="/Products/index.html">
+                                  <h4>Others</h4>
+                                </a>  
+                                <a href="/Products/index.html">
+                                  <h4>Others</h4>
+                                </a>
+                              </div>
+                  </div>
+          </a>
+        </li>
+             
+              <li id="contact" class="dropdown"><a href="" >CONTACT US <i class="fa fa-caret-down"></i>
+                <div class="dropdown-content">
+                  <div class="productlist2" id="community">
+                    <div class="col-md-6 second">
+                      <a href="https://www.facebook.com/RolandGlobalOfficial/?brand_redir=72272268297">
+                        <img src="/img/menu_facebook.png" alt="" class="menu-icons">
+                       
+                      </a>
+                      <a href="https://www.youtube.com/user/rolandchannel">
+                        <img src="/img/menu_youtube.png" alt="" class="menu-icons">
+                      
+                      </a>
+                      <a href="https://twitter.com/rolandglobal">
+                        <img src="/img/menu_twitter.png" alt="" class="menu-icons">
+                      </a>  
+                    
+                      
+                    </div>
+                    <div class="col-md-6 second">
+                        <a href="https://www.instagram.com/rolandglobal/?hl=en">
+                          <img src="/img/menu-instagram.png" alt="" class="menu-icons">
+                          
+                        </a>
+                        <a href="https://www.roland.com/global/">
+                          <img src="/img/menu_social_media.png" alt="" class="menu-icons">
+                          
+                        </a>
+                        <a href="https://www.roland.com/global/">
+                          <img src="/img/menu-tiktok.png" alt="" class="menu-icons">
+                          
+                        </a>  
+                    </div>  
+                  </div>
+                      
+                </div>
+            </a>
+          </li>
+              
+          </ul>
+
+          
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="/LoginPage/index.html"><span class="glyphicon glyphicon-user"></span> Log out</a></li>
+              <li>
+                  <a id="cart"> 
+                    <div class="cart-btn"> 
+                      <i id="cart" class="glyphicon glyphicon-shopping-cart"></i>
+                      Cart <span class ="cart-quantity">0</span>
+                    </div>
+                </a>
+              </li>
+          </ul>
+
+          <div class="cart-modal-overlay">
+            <div class="cart-modal">
+              <i id="close-btn">ⓧ</i>
+              <div class="cart-header">
+                <h1 class="your-cart"><img src="/img/shopping-cart.png" width="30px" height="30px" alt=""> Your Cart </h1>
+                <img src="/img/logo3.png">
+              </div>
+              <div class="product-rows">
+              </div>
+              <div class="total">
+                <h1 class="cart-total">TOTAL</h1>
+                <span class="total-price">$0</span>
+                <button class="purchase-btn">PURCHASE</button>
+              </div>
+              <p id="location">Your products will be shipped to: <img src="/img/location.png" alt="location" width="30px" height="30px"></p>
+              <button id="location-button">Click to get your location</button>
+              <div class="paySection">
+                <div class="paymethods">
+                  <img src="https://d1b2zzpxewkr9z.cloudfront.net/images/checkout/visa.png" alt="">
+                  <img src="https://d1b2zzpxewkr9z.cloudfront.net/images/checkout/discover.png" alt="">
+                  <img src="https://d1b2zzpxewkr9z.cloudfront.net/images/checkout/mastercard.png" alt="">
+                  <img src="https://d1b2zzpxewkr9z.cloudfront.net/images/checkout/amex.png" alt="">
+                 
+                </div>
+                
+                <p class="pay-resources">✔️ We accept all major credit cards and Paypal. ✔️ </p>
+              </div>
+            </div>
+        </div>
+
+          <form class="navbar-form navbar-right" action="/action_page.php" autocomplete="off">
+              <div class="input-group">              
+                <div class="gcse-search"></div>
+              </div>
+            </form>
+      </div>
+  </nav>
+    
+  </div>
+
+  <div class="products container-fluid">
+   <h1>Online Store Products</h1>
+  
+   
+   <section class="gallery">
+    <div class="container-fluid">
+    
+      <div class="toolbar"> 
+        <div class="search">
+          <input type="search" placeholder="Search...                        🔍"> 
+          <p id="search-error"></p>
+          <div class="counter">
+             <span></span>
+          </div>
+          
+        </div>
+
+        
+
+        <div class="search-wrapper categories">
+          <div class="row"> 
+            <p class="category-title"> Categories</p>
+            <div class="row checkbox">
+              <ol>
+                <li class="options"><input type="radio" name="Option" id="electronics"> Electronics</li>
+                <li class="options"><input type="radio" name="Option" id="jewelery"> Jewelry</li>
+                <li class="options"><input type="radio" name="Option" id="women's clothing"> Women's clothing</li>
+                <li class="options"><input type="radio" name="Option" id="men's clothing"> Men's clothing</li>
+                <li class="options"><input type="radio" name="Option" id="showAll"> Show all</li>
+                
+              </ol>
+             
+            </div>
+            <span class="sort-products">
+              <p>Sort Products By Id No.</p>
+              <button id="sortedAsc">Sort Asc.</button>
+              <button id="sortedDesc">Sort Desc.</button>
+            </span>
+          </div>
+        </div>
+     
+        <ul class="view-options">
+          <li>
+            
+          </li>
+          <li class="zoom">
+            
+            <input type="range" min="180" max="380" value="280">
+          </li>
+          <li class="show-grid active">
+            <p>Grid</p>
+            <button disabled>
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/grid-view.svg" alt="grid view">  
+            </button>
+          </li>
+          <li class="show-list">
+            <p>List</p>
+            <button>
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/list-view.svg" alt="list view">  
+            </button>
+          </li>
+        </ul>
+        
+      </div>
+      
+      <p class="checkFavorites">❤️ Check your Favorites list bellow product list! ✔️ </p>
+      <p id="catch-error"></p>
+      <div class="container" id="loading">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="loader">
+                    <p>Loading...</p>
+                    <div class="loader-inner"></div>
+                    <div class="loader-inner"></div>
+                    <div class="loader-inner"></div>
+                </div>
+            </div>
+        </div>
+      </div>
+            
+      <ol class="image-list grid-view items-container"> 
+<!-- here will come the product list generated by script -->
+      </ol>
+      <div class="favoriteContainer"> ❤️ Favorites products: 
+        <ol id="favoritesList">
+
+        </ol>
+      </div>
+    </div>
+  </section>
+  
+  <template id="productcard">
+    <li>
+      <figure class="card">
+        <div>
+        <img class="product-image" id="image0" src="" alt="product-image">
+      </div>
+        <p class="description"></p>
+        <div class="price-tag">
+          <span>$</span>
+          <span class="price product-price" id="product-price-0"></span> 
+        </div>
+        <h6 class="stock">In stock <i class="bi bi-check2-square"></i></h6>
+        <button class="btn btn-default addToCart add-to-cart"><i class="bi bi-cart-plus"></i> Add to cart</button>
+        <button class="btn btn-default favorites" ><i class="bi bi-heart "></i>Add to Favorites</button> 
+        <a class="product-details-anchor" href="/SingleProducts/index.html?productId=#">
+          <button class="btn btn-default check-details"> 
+            Check details 
+            <img src="/img/detail.png" width="16px" alt="">
+          </button>
+        </a>
+        <p class="fig-title" id="title0"></p>
+      </figure>     
+    </li>
+  </template>
+
+  <div class="chat-bar-collapsible">
+    <button id="chat-button" type="button" class="collapsible">Chat with us!
+        <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+    </button>
+
+    <div class="content">
+        <div class="full-chat-block">
+          
+            <div class="outer-container">
+                <div class="chat-container">
+                
+                    <div id="chatbox">
+                        <h5 id="chat-timestamp"></h5>
+                        <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                    </div>
+                    <div class="chat-bar-input-block">
+                        <div id="userInput">
+                            <input id="textInput" class="input-box" type="text" name="msg"
+                                placeholder="Tap 'Enter' to send a message">
+                            <p></p>
+                        </div>
+
+                        <div class="chat-bar-icons">
+                            <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                onclick="heartButton()"></i>
+                            <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                onclick="sendButton()"></i>
+                        </div>
+                    </div>
+
+                    <div id="chat-bar-bottom">
+                        <p></p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="up">
+  <button class="up-button btn-default" onclick="topFunction()" id="myBtn">  
+    <i class="fa fa-caret-up"></i>
+  </button>
+      
+</div>
+
+  <footer class="container-fluid">
+    <div class="row footer container-fluid">
+      <div class="col-md-2">
+        <h5>PRODUCTS</h5>
+        <a href="">Featured products</a>
+        <a href="">Pianos</a>
+        <a href="">Organs</a>
+        <a href="">Synthesizer</a>
+        <a href="">Keyboards</a>
+        <a href="">Guitar & Bass</a>
+        <a href="">Drums & Percussion</a>
+        <a href="">Wind Instruments</a>
+        <a href="">Production</a>
+        <a href="">Amplifiers</a>
+        <a href="">AIRA & DJ</a>
+        <a href="">Roland Cloud</a>
+        <a href="">Professional AV</a>
+        <a href="">Accesories</a>
+        <a href="">Apps</a>
+      </div>
+      <div class="col-md-2">
+        <h5>COMMUNITY</h5>
+        <a href="">Facebook</a>
+        <a href="">YouTube</a>
+        <a href="">Twitter</a>
+        <a href="">Instagram</a>
+        <a href="">World Social Network</a>
+        </div>
+      <div class="col-md-2">
+        <h5>SUPPORT</h5>
+        <a href="">Updates & Drivers</a>
+        <a href="">Owner's Manuals</a>
+        <a href="">Support Documents</a>
+        <a href="">Support News</a>
+        </div>
+      <div class="col-md-2">
+        <h5>ARTICLES</h5>
+        <a href="">Stories</a>
+        <a href="">Learn</a>
+        <a href="">Discover</a>
+        <a href="">Knowledge Base</a>
+        </div>
+      <div class="col-md-2">
+        <h5>IR</h5>
+        <a href="">Management Policy</a>
+        <a href="">Financial Information</a>
+        <a href="">IR Library</a>
+        <a href="">Stock Information</a>
+        </div>
+      <div class="col-md-2">
+        <h5>COMPANY</h5>
+        <a href="">Corporate Information</a>
+        <a href="">Philosophy</a>
+        <a href="">Brands</a>
+        <a href="">History</a>
+        </div>
+    </div>
+  
+    <div class="row container-fluid footer2">
+     
+      
+        <div class="col-md-6">
+          <img src="/img/promo_boss.jpg" alt="">
+        </div>
+        
+        <div class="col-md-6">
+          <img src="/img/promo_v-moda.png" alt="">
+        </div>
+     
+     
+     
+      <div class="row footer3">
+              
+        <div class="col-6 copyright privacy">
+                Privacy Statement | Terms of Use | Accesibility Statement
+        </div>
+              
+        <div class="col-6 copyright privacy">
+                Copyright © 2023 Online Store Corporation
+        </div>
+      
+          
+      </div>
+  
+    
+  
+    
+  </footer>
+</body>
+</html>

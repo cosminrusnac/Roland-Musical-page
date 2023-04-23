@@ -1,0 +1,83 @@
+/* var colors */
+:root {
+  --pineGreen: #1d3c45;
+  --orangeLight: rgb(210, 96, 26);
+  --lightPeach: rgb(255, 241, 225);
+  --minRangeValue: 280px;
+}
+
+/* settings for page - all elements  */
+
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: 'Tinos', serif;
+}
+
+/* single product div */
+
+.singleproduct {
+  margin: 100px;
+  margin-top: 40px;
+  width: fit-content;
+  padding: 3vw;
+  background-color: var(--lightPeach);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  overflow: hidden;
+}
+
+.singleproduct > div > img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 0.1px solid rgb(174, 171, 171);
+  outline: var(--lightPeach) 5px solid;
+  margin-top: 40px;
+  height: 250px;
+  width: auto;
+}
+
+.singleproduct > h2, .singleproduct > h1, .singleproduct > p {
+  padding: 10px;
+}
+
+.details {
+  margin-left: 40px;
+  border-left: rgb(207, 203, 203) 3px solid;
+  padding-left: 40px;
+}
+
+.backbutton {
+  margin-top: 180px;
+  margin-left: 100px; 
+}
+
+#back {
+  padding: 10px;
+  border: 1px grey solid;
+  border-radius: 4px;
+  background-color: var(--lightPeach);
+}
+
+#back:hover {
+  background-color: var(--orangeLight);
+  color:rgb(199, 230, 230);
+  transition: .3s;
+}
+
+.addToCart {
+  padding: 10px;
+  border: 1px grey solid;
+  border-radius: 4px;
+  background-color: white;
+  margin: 20px;
+  position: relative;
+}
+
+#product-category {
+  font-style: italic;
+}
+
+#product-description {
+  font-weight: bold;;
+}
